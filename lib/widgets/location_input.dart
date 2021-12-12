@@ -35,7 +35,8 @@ class _LocationInputState extends State<LocationInput> {
           children: [
             FlatButton.icon(
               icon: const Icon(
-                Icons.location_on,
+                Icons.location_pin,
+                color: Colors.deepOrange,
               ),
               label: const Text('Current location'),
               textColor: Theme.of(context).primaryColor,
@@ -44,6 +45,7 @@ class _LocationInputState extends State<LocationInput> {
             FlatButton.icon(
               icon: const Icon(
                 Icons.map,
+                color: Colors.deepOrange,
               ),
               label: const Text('Select on map'),
               textColor: Theme.of(context).primaryColor,
