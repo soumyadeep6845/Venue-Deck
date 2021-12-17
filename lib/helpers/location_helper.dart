@@ -15,6 +15,7 @@ class LocationHelper {
 
   static Future<String> getPlaceAddress(double lat, double lng) async {
     // final url = Uri.parse('https://maps.googleapis.com/maps/api/geocode/json?latlng=$lat,$lng&key=$MAPBOX_API_KEY');
+    // this is the reverse geocoding API url.
     final params = {
       'latlng': '$lat,$lng',
       'key': MAPBOX_API_KEY,
