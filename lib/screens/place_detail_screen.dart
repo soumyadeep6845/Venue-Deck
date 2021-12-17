@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../providers/great_places.dart';
-import 'map_screen.dart';
+import './map_screen.dart';
 
 class PlaceDetailScreen extends StatelessWidget {
   const PlaceDetailScreen({Key? key}) : super(key: key);
@@ -32,7 +32,7 @@ class PlaceDetailScreen extends StatelessWidget {
             height: 10,
           ),
           Text(
-            selectedPlace.location!.address.toString(),
+            selectedPlace.location!.address!,
             textAlign: TextAlign.center,
             style: const TextStyle(
               fontSize: 20,
