@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-// import 'package:flutter_config/flutter_config.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 import './providers/great_places.dart';
 import './screens/places_list_screen.dart';
 import './screens/add_place_screen.dart';
 import './screens/place_detail_screen.dart';
 
-void main() async {
+Future main() async {
   // WidgetsFlutterBinding.ensureInitialized();
-  // await FlutterConfig.loadEnvVariables();
+  await dotenv.load(fileName: ".env");
   
   runApp(const MyApp());
 }

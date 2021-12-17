@@ -1,10 +1,9 @@
 import 'dart:convert';
 
-// import 'package:flutter_config/flutter_config.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:http/http.dart' as http;
 
-const MAPBOX_API_KEY =
-    'pk.eyJ1Ijoic291bXlhZGVlcDY4NDUiLCJhIjoiY2t4NGdkNWNxMXYyazJwb2JnNm40c2U4OCJ9.tBQ2K1Uqkl6LON0Aj3D6vQ';
+final MAPBOX_API_KEY = dotenv.env['MAPBOX_API_KEY'];
 
 class LocationHelper {
   static String generateLocationPreviewImage({
