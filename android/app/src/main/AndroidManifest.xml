@@ -2,9 +2,12 @@
     package="com.example.great_places_app">
    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/> 
+   <uses-permission android:name="android.permission.INTERNET"/>
    <application
         android:label="Venue Deck"
         android:icon="@mipmap/ic_launcher">
+        <meta-data android:name="com.google.android.geo.API_KEY"
+               android:value="pk.eyJ1Ijoic291bXlhZGVlcDY4NDUiLCJhIjoiY2t4NGdkNWNxMXYyazJwb2JnNm40c2U4OCJ9.tBQ2K1Uqkl6LON0Aj3D6vQ"/>
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
